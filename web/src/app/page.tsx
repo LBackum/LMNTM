@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { CHAPTERS, FULL_BOOK_PRICE_CENTS, formatPrice } from "@/lib/content";
 
@@ -5,8 +6,16 @@ export default function HomePage() {
   return (
     <div className="page-shell items-center text-center">
       <section className="mt-6 flex flex-col items-center gap-8">
-        <div className="relative overflow-hidden rounded-2xl bg-mist p-8 shadow-page ring-1 ring-cocoa/10">
-          <BookCover />
+        <div className="relative overflow-hidden rounded-2xl bg-mist p-4 shadow-page ring-1 ring-cocoa/10 sm:p-6">
+          <Image
+            src="/cover.png"
+            alt="Lessons Mama Never Taught Me — cover art by Melissa Koby"
+            width={775}
+            height={1200}
+            priority
+            sizes="(max-width: 640px) 80vw, 320px"
+            className="h-auto w-[260px] rounded-lg shadow-[0_10px_40px_-10px_rgba(89,51,37,0.45)] sm:w-[320px]"
+          />
         </div>
 
         <div className="space-y-3">
@@ -48,18 +57,3 @@ function Feature({ title, body }: { title: string; body: string }) {
   );
 }
 
-function BookCover() {
-  return (
-    <div className="flex h-80 w-56 flex-col justify-between rounded-lg bg-[#d1d8e2] p-5 text-left shadow-[0_10px_40px_-10px_rgba(89,51,37,0.4)]">
-      <div>
-        <p className="font-display text-2xl leading-tight text-cocoa">
-          LESSONS<br />MAMA<br />NEVER<br />TAUGHT<br />ME
-        </p>
-        <div className="mt-4 h-12 w-12 rounded-full bg-sand opacity-90" />
-      </div>
-      <p className="font-sans text-xs uppercase tracking-widest text-cocoa/90">
-        Dr. Karen R. January
-      </p>
-    </div>
-  );
-}

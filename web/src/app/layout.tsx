@@ -36,11 +36,13 @@ export const metadata: Metadata = {
     siteName: "Lessons Mama Never Taught Me",
     type: "book",
     authors: ["Dr. Karen R. January"],
+    images: [{ url: "/og-cover.png", width: 775, height: 1200, alt: "Lessons Mama Never Taught Me cover" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lessons Mama Never Taught Me",
     description: "Real stories. Real lessons. By Dr. Karen R. January.",
+    images: ["/og-cover.png"],
   },
   robots: { index: true, follow: true },
   icons: { icon: "/favicon.ico" },
