@@ -1,0 +1,222 @@
+[
+  {
+    "id": "cover",
+    "order": 0,
+    "title": "Lessons Mama Never Taught Me",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "Dr. Karen R. January",
+    "wordCount": 4
+  },
+  {
+    "id": "copyright",
+    "order": 1,
+    "title": "Copyright",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "Lessons Mama Never Taught Me is a non-fiction literary work. The names and identifying details of the individuals mentioned in this book have been changed in order to protect their privacy. Copyright © 2025 Authored by Dr. Karen R. January. All rights reserved. Published in...",
+    "wordCount": 141
+  },
+  {
+    "id": "foreword",
+    "order": 2,
+    "title": "Forword",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "The purpose of this book was to share actual real-life stories with other women, mothers and future mothers in hopes of strengthening, improving, and encouraging an open and honest dialogue between a mother and her daughter(s). The women who contributed to this writing felt strongly...",
+    "wordCount": 276
+  },
+  {
+    "id": "acknowledgements",
+    "order": 3,
+    "title": "Acknowledgements",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "I would like to thank everyone for their valuable time, guidance and sincere interest in this project. I extend my heartfelt gratitude to you. To my sons Jarret and Corey Mays, your many accomplishments and determination to succeed continue to inspire me. You have taught...",
+    "wordCount": 168
+  },
+  {
+    "id": "toc",
+    "order": 4,
+    "title": "Contents",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "",
+    "wordCount": 0
+  },
+  {
+    "id": "introduction",
+    "order": 5,
+    "title": "Introduction",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "Think back for a moment… Do you remember how you learned about sex, drugs, boys, and life in general? This question was posed to women from the baby boomers age, and the “X” and “Y” generations. The number one response was they learned most of...",
+    "wordCount": 631
+  },
+  {
+    "id": "prologue",
+    "order": 6,
+    "title": "Prologue",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "Many of us have memories of growing up. Some were good and others we would like to forget about all together. In some households there were certain phrases mothers would say to us that were considered “teachable moments.” As I think back, I didn’t understand...",
+    "wordCount": 1600
+  },
+  {
+    "id": "chapter-1",
+    "order": 7,
+    "title": "How My Mother Became My Pimp",
+    "isChapter": true,
+    "chapterNumber": 1,
+    "free": false,
+    "preview": "“Puppy love, teen idols, high school, pajama parties, hanging out at the mall, soccer practices and games are things a twelve-year-old child should be thinking about. Instead, my young innocence was stripped away, and my weekends were spent “Kissing and licking it” and I don’t...",
+    "wordCount": 4607
+  },
+  {
+    "id": "chapter-2",
+    "order": 8,
+    "title": "The Manic Husband from Cyberspace",
+    "isChapter": true,
+    "chapterNumber": 2,
+    "free": false,
+    "preview": "“I was a single parent looking for love. I found it (of all places) on the Internet.” They say, “Love is blind.” It must be because I couldn’t see the forest for the trees. Once I said, “I do,” the blindfold soon came off, and...",
+    "wordCount": 6758
+  },
+  {
+    "id": "chapter-3",
+    "order": 9,
+    "title": "A High Roller Who Lost It All",
+    "isChapter": true,
+    "chapterNumber": 3,
+    "free": false,
+    "preview": "“I became a high roller at age 20. I was selling drugs to NFL’s athletes. I was making big money and spending it just as fast up my nose. I broke the sacred creed in the game. I became my biggest customer.\" Maria Chelsey 31...",
+    "wordCount": 6808
+  },
+  {
+    "id": "chapter-4",
+    "order": 10,
+    "title": "Money Can't Buy Love!",
+    "isChapter": true,
+    "chapterNumber": 4,
+    "free": false,
+    "preview": "Money Can’t Buy You Love! “He wore Armani suits, drove a Cadillac, his rent was paid, he slept on satin sheets, and he ate in the finest restaurants. There was nothing too good for the men I dated. It took filing bankruptcy and the loss...",
+    "wordCount": 5977
+  },
+  {
+    "id": "chapter-5",
+    "order": 11,
+    "title": "Who's Afraid of the Big Bad Wolf?",
+    "isChapter": true,
+    "chapterNumber": 5,
+    "free": false,
+    "preview": "Who’s Afraid of The Big Bad Wolf? “Charles seemed like a hardworking honorable man, but he was a wolf in sheep’s clothing. That big bad wolf stole something from my daughter that can never be erased. It was only by the GRACE of the Almighty...",
+    "wordCount": 4669
+  },
+  {
+    "id": "chapter-6",
+    "order": 12,
+    "title": "It's a Thin Line Between Sanity and Madness",
+    "isChapter": true,
+    "chapterNumber": 6,
+    "free": false,
+    "preview": "It’s A Thin Line Between Sanity and Madness “I was only ten years old when I started hearing voices and seeing shadows of men I didn’t know. I realized I had passed the point of no return and reality as I once knew it no...",
+    "wordCount": 4079
+  },
+  {
+    "id": "chapter-7",
+    "order": 13,
+    "title": "Deadly Craving for Love",
+    "isChapter": true,
+    "chapterNumber": 7,
+    "free": false,
+    "preview": "“I thought I had married my prince charming, the man of my dreams. I was on cloud nine and nothing else in life mattered until the day he put a knife to my throat. I was obsessed with a deadly craving for love.” Sharon Greene...",
+    "wordCount": 5545
+  },
+  {
+    "id": "chapter-8",
+    "order": 14,
+    "title": "What You Do in The Dark Will Come Out in The Light",
+    "isChapter": true,
+    "chapterNumber": 8,
+    "free": false,
+    "preview": "“The truth will always find you when you least expect it, whether you’re ready or not. I came face to face with it. It wasn’t a pretty picture. It’s funny how one piece of paper could change your whole life. 'What you do in the...",
+    "wordCount": 6861
+  },
+  {
+    "id": "chapter-9",
+    "order": 15,
+    "title": "357 Magnum Date from Hell",
+    "isChapter": true,
+    "chapterNumber": 9,
+    "free": false,
+    "preview": "\"I was just a small-town country girl who grew up in a strict sheltered “Mama” proof house. I was naive about men, relationships, and especially SEX. I was always book smart but short on street smarts. Sometimes, you have to learn street smarts on your...",
+    "wordCount": 6198
+  },
+  {
+    "id": "chapter-10",
+    "order": 16,
+    "title": "Murder on My Mind",
+    "isChapter": true,
+    "chapterNumber": 10,
+    "free": false,
+    "preview": "“I hid the kitchen knife in my book bag and left for school. It was my only hope. I would use it if I had to. If Amy messed with me today, I knew I was going to kill her…then my problems would be over...",
+    "wordCount": 5057
+  },
+  {
+    "id": "chapter-11",
+    "order": 17,
+    "title": "Jordan Taylor's Mama Issues",
+    "isChapter": true,
+    "chapterNumber": 11,
+    "free": false,
+    "preview": "“I was going to be a successful Entrepreneur dating all the women I wanted except for Black women. Men have mama issues and lessons we missed too. It wasn’t that I was against them I was just a product of my circumstances. Growing up in...",
+    "wordCount": 5285
+  },
+  {
+    "id": "chapter-12",
+    "order": 18,
+    "title": "Jordan's Second Lesson",
+    "isChapter": true,
+    "chapterNumber": 12,
+    "free": false,
+    "preview": "TT wo years later Rick and I were finally ready to open our business. I still thought about Fawn from time to time and wondered how’s he was doing. In hindsight, I definitely wasn’t prepared for a relationship. Hopefully, I had grown up a little...",
+    "wordCount": 3896
+  },
+  {
+    "id": "chapter-13",
+    "order": 19,
+    "title": "Mules or Hire: Why I Became One",
+    "isChapter": true,
+    "chapterNumber": 13,
+    "free": false,
+    "preview": "“Corruption, violence, and poverty was an everyday reality in my homeland of Mexico. Papa did the best he could for his family but, it didn’t afford the luxuries a 17-year-old dreamed of. Desperation for a better life caused me and my father to make some...",
+    "wordCount": 5561
+  },
+  {
+    "id": "epilogue",
+    "order": 20,
+    "title": "Epilogue",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "“Lessons Mama Never Taught Me,” has addressed the most critical issues that are affecting our young girls socially and emotionally today. Society has sent them unhealthy messages that being skinny, pretty, and sexy are what’s popular. This creates unrealistic beauty standards for both women and...",
+    "wordCount": 195
+  },
+  {
+    "id": "about-author",
+    "order": 21,
+    "title": "About The Author",
+    "isChapter": false,
+    "chapterNumber": null,
+    "free": true,
+    "preview": "In a lifetime you will learn about yourself and others. The most important thing you can do is to learn more about yourself each day through self-awareness. Self-awareness may include acknowledging what you like or dislike; identifying task or practices whether spiritual or emotional experiences...",
+    "wordCount": 626
+  }
+]

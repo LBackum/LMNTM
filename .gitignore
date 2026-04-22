@@ -1,0 +1,58 @@
+# ---- Node / Next.js ----
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# ---- Expo / React Native ----
+.expo/
+.expo-shared/
+web-build/
+
+# ---- Environment secrets (NEVER commit) ----
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# ---- Logs ----
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# ---- Coverage / test ----
+coverage/
+.nyc_output/
+
+# ---- Local tool caches ----
+.cache/
+.pnpm-store/
+
+# ---- Supabase local dev ----
+supabase/.temp/
+supabase/.branches/
+
+# ---- Secrets we've seen people commit by mistake ----
+*.pem
+*.key
+!**/*.public.key
+*stripe_secret*
+*service_role*
+
+# ---- Book-source artifacts not needed in repo ----
+/tmp/

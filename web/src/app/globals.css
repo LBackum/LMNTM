@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-mist: #c5ced9;
+  --color-sage: #657332;
+  --color-sand: #f2c185;
+  --color-cocoa: #593325;
+  --color-garnet: #732626;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  background: #faf7f2;
+  color: var(--color-cocoa);
+  font-feature-settings: "liga" 1, "onum" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* -------- Accessibility: reader preferences (managed via <html> classes) -- */
+html {
+  --reader-font-scale: 1;
+}
+.prose-book, .prose-book p, .prose-book li {
+  font-size: calc(1.125rem * var(--reader-font-scale));
+  line-height: 1.8;
+}
+
+html.a11y-contrast {
+  background: #fff;
+}
+html.a11y-contrast body {
+  background: #fff;
+  color: #000;
+}
+html.a11y-contrast .card,
+html.a11y-contrast header,
+html.a11y-contrast footer {
+  background: #fff !important;
+  border-color: #000 !important;
+}
+html.a11y-contrast .btn-primary { background: #000; color: #fff; }
+html.a11y-contrast .btn-secondary { background: #ffcc66; color: #000; }
+html.a11y-contrast a { color: #0000cc; text-decoration: underline; }
+
+html.a11y-dyslexic body,
+html.a11y-dyslexic .prose-book {
+  font-family: "OpenDyslexic", "Atkinson Hyperlegible", Verdana, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+html.a11y-reduced-motion *,
+html.a11y-reduced-motion *::before,
+html.a11y-reduced-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+  scroll-behavior: auto !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* -------- RTL locales ----------------------------------------------------- */
+html[dir="rtl"] body { text-align: right; }
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-2.5 text-sm font-semibold
+           transition-all duration-200 focus-visible:outline-none focus-visible:ring-2
+           focus-visible:ring-offset-2 focus-visible:ring-offset-[#faf7f2];
+  }
+  .btn-primary {
+    @apply btn bg-garnet text-white hover:bg-cocoa focus-visible:ring-garnet;
+  }
+  .btn-secondary {
+    @apply btn bg-sand text-cocoa hover:bg-[#ecb570] focus-visible:ring-sand;
+  }
+  .btn-ghost {
+    @apply btn border border-cocoa/20 bg-transparent text-cocoa hover:bg-cocoa/5
+           focus-visible:ring-cocoa;
+  }
+  .page-shell {
+    @apply mx-auto flex min-h-dvh max-w-3xl flex-col px-5 pb-24 pt-8 sm:px-8;
+  }
+  .prose-book {
+    @apply prose prose-lg max-w-none font-body text-cocoa
+           prose-headings:font-display prose-headings:text-cocoa
+           prose-a:text-sage prose-strong:text-cocoa;
+  }
+  .card {
+    @apply rounded-2xl bg-white/80 p-6 shadow-page ring-1 ring-cocoa/10 backdrop-blur;
+  }
+}
