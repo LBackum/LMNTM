@@ -15,12 +15,14 @@ alter table public.translations enable row level security;
 
 -- Reads are available to anyone signed in — paywall is enforced at the API
 -- layer, which gates translation requests on entitlements.
+drop policy if exists "translations_read_all_authenticated" on public.translations;
 create policy "translations_read_all_authenticated"
   on public.translations for select
   to authenticated
   using (true);
 
 -- Writes only via service-role.
+drop trigger if exists trg_translations_updated on public.translations;
 create trigger trg_translations_updated
   before update on public.translations
   for each row execute function public.set_updated_at();

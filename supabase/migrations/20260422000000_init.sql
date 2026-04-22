@@ -2,6 +2,7 @@
 -- All tables have Row Level Security enabled by default.
 
 create extension if not exists "pgcrypto";
+create extension if not exists citext;
 
 -- =============================================================================
 -- entitlements: unlocks a user holds (chapter-N or full-book).
@@ -21,6 +22,7 @@ create index if not exists entitlements_user_id_idx on public.entitlements(user_
 
 alter table public.entitlements enable row level security;
 
+drop policy if exists "entitlements_read_own" on public.entitlements;
 create policy "entitlements_read_own"
   on public.entitlements for select
   using (auth.uid() = user_id);
@@ -64,18 +66,19 @@ create table if not exists public.age_verifications (
   )
 );
 
-create extension if not exists citext;
-
 alter table public.age_verifications enable row level security;
 
+drop policy if exists "age_verifications_read_own" on public.age_verifications;
 create policy "age_verifications_read_own"
   on public.age_verifications for select
   using (auth.uid() = user_id);
 
+drop policy if exists "age_verifications_insert_own" on public.age_verifications;
 create policy "age_verifications_insert_own"
   on public.age_verifications for insert
   with check (auth.uid() = user_id);
 
+drop policy if exists "age_verifications_update_own" on public.age_verifications;
 create policy "age_verifications_update_own"
   on public.age_verifications for update
   using (auth.uid() = user_id)
