@@ -35,22 +35,32 @@ class Para:
     text: str
 
 
-# Canonical TOC title first; any alternate in-body wording follows. Extractor
-# searches all variants, but the first (TOC) form is what we display.
+# Display-title overrides for front/back-matter sections. The body heading is
+# otherwise used verbatim; override here to correct genuine manuscript typos
+# that the author has asked us to fix (e.g. "FORWORD" → "Foreword").
+TITLE_OVERRIDES: dict[str, str] = {
+    "foreword": "Foreword",
+}
+
+
+# Canonical title = what appears in the manuscript BODY (the actual chapter
+# heading the reader sees). Alternate forms (e.g. TOC wording) are only used
+# to help the extractor find the chapter boundary if the body form isn't
+# matched verbatim.
 CHAPTER_TITLES: list[tuple[str, list[str]]] = [
     ("How My Mother Became My Pimp", []),
-    ("The Manic Husband from Cyberspace", ["The Maniac Husband from Cyberspace"]),
+    ("The Maniac Husband from Cyberspace", ["The Manic Husband from Cyberspace"]),
     ("A High Roller Who Lost It All", []),
-    ("Money Can't Buy Love!", ["Money Can't Buy You Love!"]),
-    ("Who's Afraid of the Big Bad Wolf?", ["Who's Afraid of The Big Bad Wolf?"]),
-    ("It's a Thin Line Between Sanity and Madness", ["It's A Thin Line Between Sanity and Madness"]),
+    ("Money Can't Buy You Love!", ["Money Can't Buy Love!"]),
+    ("Who's Afraid of The Big Bad Wolf?", ["Who's Afraid of the Big Bad Wolf?"]),
+    ("It's A Thin Line Between Sanity and Madness", ["It's a Thin Line Between Sanity and Madness"]),
     ("Deadly Craving for Love", []),
     ("What You Do in The Dark Will Come Out in The Light", []),
     ("357 Magnum Date from Hell", []),
     ("Murder on My Mind", []),
     ("Jordan Taylor's Mama Issues", []),
-    ("Jordan's Second Lesson", ["Jordan Taylor's Second Lesson"]),
-    ("Mules or Hire: Why I Became One", ["Mules For Hire: Why I Became One"]),
+    ("Jordan Taylor's Second Lesson", ["Jordan's Second Lesson"]),
+    ("Mules For Hire: Why I Became One", ["Mules or Hire: Why I Became One"]),
 ]
 
 
@@ -216,6 +226,10 @@ def build_sections(paras: list[Para]) -> list[dict]:
             if lines:
                 title = lines[0].strip().title() if lines[0].isupper() else lines[0].strip()
                 body = "\n".join(lines[1:]).strip()
+
+        # Apply any author-approved display-title corrections.
+        if sid in TITLE_OVERRIDES:
+            title = TITLE_OVERRIDES[sid]
 
         # Remove any TOC-looking pages numbers (trailing roman/arabic)
         body = re.sub(r"\b[ivxlcdmIVXLCDM]+\s*$", "", body)
